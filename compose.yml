@@ -1,0 +1,8 @@
+services:
+  ctf:
+    container_name: ctf
+    build:
+      context: .
+    volumes: 
+      - ./:/home/ctf/
+    entrypoint: tail -f /dev/null
